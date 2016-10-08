@@ -49,7 +49,7 @@
     background-color: transparent;
     border: none;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: monospace;
     font-size: 1.125rem;
   }
 
@@ -79,18 +79,30 @@
     <section>
       <h1>matt krell</h1>
       <pre>
-                  var profile = {
-                   software developer:
-                   systems analyst:
-                   aspiring front-end web developer:
-                  }
+      var profile = {
+       software developer :
+       systems analyst :
+       aspiring front-end web developer :
+      }
     </pre>
         <button type="button" name="enter">Enter</button>
     </section>
   </div>
   <!-- this will be the navigation container -->
-  <div class="container-fluid"><h1>Hi there</h1>
-  </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Matt Krell</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="//yahoo.com">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- about me -->
   <div class="container">
     <article>
@@ -100,6 +112,13 @@
         <div class="col-md-4 col-sm-12 text-center"><h3>Languages</h3></div>
         <div class="col-md-4 col-sm-12 text-center"><h3>Education</h3></div>
       </div>
+    </article>
+  </div>
+
+  <!-- portfolio -->
+  <div class="container">
+    <article>
+      <header class="text-center"><h1>portfolio</h1></header>
     </article>
   </div>
 
