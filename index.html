@@ -67,7 +67,7 @@
     font-family: 'Lato', sans-serif;
   }
 
-  .about-me-item, .portfolio-item {
+  .about-me-item, .portfolio-item, .social-item {
     font-family: 'Raleway', sans-serif;
     font-size: 1.125rem;
     padding: 1em 2em;
@@ -89,9 +89,11 @@
   }
 
   .card-desc {
-    max-width: 100%;
+    font-size: 1.125rem;
+    font-family: 'Raleway', sans-serif;
     height: 25%;
-    margin: 0px 5px;
+    max-width: 100%;
+    padding-top: .5em;
   }
 
   img {
@@ -103,6 +105,16 @@
   .portfolio {
     background-color: #717278;
     color: #fff;
+  }
+
+  .social {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .social-item i {
+    padding: 0em .5em;
+
   }
   </style>
 </head>
@@ -175,19 +187,19 @@
         <div class="row">
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/Simon-Game.png"></div>
+              <div class="card-item"><a href="http://codepen.io/StonePSU/full/OXaOqP/"><img class="img-thumbnail" src="./images/Simon-Game.png"></a></div>
               <div class="card-desc">Simon Game</div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/TicTacToe.png"></div>
+              <div class="card-item"><a href="http://codepen.io/StonePSU/full/MepVOZ/"><img class="img-thumbnail" src="./images/TicTacToe.png"></a></div>
               <div class="card-desc">Tic Tac Toe versus Computer</div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/Calculator.png"></div>
+              <div class="card-item"><a href="http://codepen.io/StonePSU/full/YWWdQm/"><img class="img-thumbnail" src="./images/Calculator.png"></a></div>
               <div class="card-desc">Web-based Calculator</div>
             </div>
           </div>
@@ -195,19 +207,19 @@
         <div class="row">
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/PomodoroTimer.png"></div>
+              <div class="card-item text-center"><a href="http://codepen.io/StonePSU/full/VjPMeO/"><img class="img-thumbnail" src="./images/PomodoroTimer.png"></a></div>
               <div class="card-desc">Pomodoro Clock</div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/WikipediaSearch.png"></div>
+              <div class="card-item"><a href="http://codepen.io/StonePSU/full/VaEqad/"><img class="img-thumbnail" src="./images/WikipediaSearch.png"></a></div>
               <div class="card-desc">Wikipedia Search API</div>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 text-center">
             <div class="card">
-              <div class="card-item"><img class="img-thumbnail" src="./images/RandomQuoteGenerator.png"></div>
+              <div class="card-item"><a href="http://codepen.io/StonePSU/full/PNywZv/"><img class="img-thumbnail" src="./images/RandomQuoteGenerator.png"></a></div>
               <div class="card-desc">Random Quote Generator</div>
             </div>
           </div>
@@ -217,10 +229,20 @@
   </div>
 
   <!-- connect with me -->
+  <div class="social">
   <div class="container">
     <article>
       <header class="text-center"><h1>connect</h1></header>
+      <section class="social-item text-center">
+        <i class="fa fa-facebook fa-3x" aria-hidden="false"></i>
+        <i class="fa fa-twitter fa-3x" aria-hidden="false"></i>
+        <i class="fa fa-instagram fa-3x" aria-hidden="false"></i>
+        <i class="fa fa-google-plus fa-3x" aria-hidden="false"></i>
+        <i class="fa fa-github fa-3x" aria-hidden="false"></i>
+        <i class="fa fa-codepen fa-3x" aria-hidden="false"></i>
+      </section>
     </article>
   </div>
+</div>
 </body>
 </html>
