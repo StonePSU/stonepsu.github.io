@@ -6,6 +6,7 @@
   <title>The Homepage of Matt Krell</title>
   <link href="css/html5reset-1.6.1.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
@@ -78,7 +79,7 @@
   }
 
   .card {
-    width: 300px;
+    /*max-width:300px;*/
     height: 300px;
   }
 
@@ -121,7 +122,7 @@
 <body>
   <!-- this will be the navigation container -->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid" id="top">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
           <span class="icon-bar"></span>
@@ -132,10 +133,10 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavBar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="//yahoo.com">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">connect</a></li>
+          <li class="active"><a href="#top">home</a></li>
+          <li><a href="#about-me">about</a></li>
+          <li><a href="#port">portfolio</a></li>
+          <li><a href="#connect">connect</a></li>
         </ul>
       </div>
     </div>
@@ -157,7 +158,7 @@
 
 
   <!-- about me -->
-  <div class="container margin-space">
+  <div class="container margin-space" id="about-me">
     <article>
       <header class="text-center"><h1>about me</h1></header>
       <div class="row">
@@ -179,7 +180,7 @@
   </div>
 
   <!-- portfolio -->
-  <div class="portfolio">
+  <div class="portfolio" id="port">
     <div class="container">
       <article>
         <header class="text-center"><h1>portfolio</h1></header>
@@ -229,17 +230,16 @@
   </div>
 
   <!-- connect with me -->
-  <div class="social">
+  <div class="social" id="connect">
   <div class="container">
     <article>
       <header class="text-center"><h1>connect</h1></header>
       <section class="social-item text-center">
-        <i class="fa fa-facebook fa-3x" aria-hidden="false"></i>
-        <i class="fa fa-twitter fa-3x" aria-hidden="false"></i>
-        <i class="fa fa-instagram fa-3x" aria-hidden="false"></i>
-        <i class="fa fa-google-plus fa-3x" aria-hidden="false"></i>
-        <i class="fa fa-github fa-3x" aria-hidden="false"></i>
-        <i class="fa fa-codepen fa-3x" aria-hidden="false"></i>
+        <a href="https://www.facebook.com/matt.krell"><i class="fa fa-facebook fa-3x" aria-hidden="false"></i></a>
+        <a href="https://twitter.com/MattKrell"><i class="fa fa-twitter fa-3x" aria-hidden="false"></i></a>
+        <a href="https://www.instagram.com/mattkrell/"><i class="fa fa-instagram fa-3x" aria-hidden="false"></i></a>
+        <a href="https://github.com/StonePSU"><i class="fa fa-github fa-3x" aria-hidden="false"></i></a>
+        <a href="http://codepen.io/StonePSU/"><i class="fa fa-codepen fa-3x" aria-hidden="false"></i></a>
       </section>
     </article>
   </div>
